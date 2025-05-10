@@ -1,4 +1,4 @@
-# Skip Hire Selection App
+# Skip Hire Selection App 
 
 This project is a modern, modular React application for selecting skip sizes, inspired by a professional UI design. It fetches real-time skip data from an external API and presents it in a visually appealing, user-friendly way.
 
