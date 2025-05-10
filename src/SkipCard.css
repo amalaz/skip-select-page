@@ -1,0 +1,97 @@
+body {
+    background: #18191a;
+  }
+  
+  .skip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .skip-card {
+    background: #232526;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s, border 0.2s;
+    border: 2px solid transparent;
+  }
+  .skip-card.not-allowed {
+    border: 2px solid #ffb300;
+  }
+  .skip-card-image {
+    position: relative;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+  }
+  .skip-card-image img {
+    max-width: 80%;
+    max-height: 120px;
+  }
+  .skip-size-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #2563eb;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 16px;
+    padding: 4px 14px;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .skip-card-content {
+    padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .skip-card-content h2 {
+    margin: 0 0 0.5rem 0;
+    color: #fff;
+    font-size: 1.3rem;
+  }
+  .skip-card-content p {
+    margin: 0.2rem 0;
+    color: #b0b3b8;
+  }
+  .skip-card-price {
+    color: #2563eb;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0.7rem 0 0.5rem 0;
+  }
+  .skip-card-warning {
+    background: #ffb300;
+    color: #232526;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 0.3rem 0.7rem;
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+    display: inline-block;
+  }
+  .skip-card-select {
+    background: #232526;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+  }
+  .skip-card-select:hover {
+    background: #2563eb;
+    color: #fff;
+  }
+  
