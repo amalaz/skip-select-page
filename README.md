@@ -1,4 +1,4 @@
-# Skip Hire Selection App 
+# Skips Selection App 
 
 This project is a modern, modular Next.js application for selecting skip sizes, inspired by a professional UI design. It fetches real-time skip data from an external API and presents it in a visually appealing, user-friendly way.
 
@@ -96,15 +96,6 @@ src/
 - TypeScript for type safety
 - Tailwind for styling
 - React Query for data management
-
-## Next Steps / Ideas
-- Add real skip images with Next.js Image optimization
-- Implement skip selection persistence
-- Add filters and search functionality
-- Enhance accessibility features
-- Add unit and integration tests
-- Implement error boundaries
-- Add loading states and skeletons
 
 ---
 
