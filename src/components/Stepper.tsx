@@ -14,7 +14,7 @@ const activeStep = 2; // 0-based index, e.g. 2 means 'Select Skip' is active
 
 const Stepper: React.FC = () => {
   return (
-    <nav className="flex items-center justify-center w-full py-3 sm:py-6 bg-transparent overflow-x-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
+    <nav className="sticky top-0 z-30 flex items-center justify-center w-full py-3 sm:py-6 bg-[#181A20] border-b border-[#23262F] overflow-x-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-transparent">
       <ol className="flex items-center space-x-0 min-w-max px-1 sm:px-2">
         {steps.map((step, idx) => {
           const isCompleted = idx < activeStep;
