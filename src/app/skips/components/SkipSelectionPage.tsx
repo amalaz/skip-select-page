@@ -4,8 +4,11 @@ import React from 'react';
 import SkipCard from '@/components/SkipCard';
 import { useSkips } from '@/hooks/useSkips';
 import { useSkipSelection } from '@/hooks/useSkipSelection';
+import Stepper from '@/components/Stepper';
+import BottomBar from '@/components/BottomBar';
+import { SkipSelectionProvider } from '@/context/SkipSelectionContext';
 
-const SkipSelectionPage: React.FC = () => {
+const SkipSelectionPageContent: React.FC = () => {
   const { data: skips, isLoading, isError } = useSkips();
   const { selectedId, selectSkip, deselectSkip, isSelected } = useSkipSelection();
 
@@ -27,6 +30,7 @@ const SkipSelectionPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-[#141416]">
+      <Stepper />
       <div className="max-w-7xl mx-auto px-5 py-10">
         <div className="flex justify-between items-center mb-10">
           <div>
@@ -46,7 +50,16 @@ const SkipSelectionPage: React.FC = () => {
           ))}
         </div>
       </div>
+      <BottomBar />
     </div>
+  );
+};
+
+const SkipSelectionPage: React.FC = () => {
+  return (
+    <SkipSelectionProvider>
+      <SkipSelectionPageContent />
+    </SkipSelectionProvider>
   );
 };
 
